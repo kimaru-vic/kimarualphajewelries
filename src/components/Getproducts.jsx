@@ -39,7 +39,7 @@ const Getproducts = () => {
   useEffect(()=>{getproducts()},[])
   
   useEffect(()=>{
-    const response=products.filter((product)=>product.product_name.toLowerCase().includes(search.toLowerCase()));
+    const response=products.filter((product)=>(product?.product_name??"").toLowerCase().includes((search??"").toLowerCase()));
     setFiltered(response)
 },[products,search])
     
