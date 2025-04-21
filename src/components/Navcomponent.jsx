@@ -37,7 +37,7 @@ const Navcomponent = () => {
                         <>
                             <Link className="nav-item nav-link" to={'/addproduct'}>Add Product</Link>
                             <span className='text-light  me-1'>User:<b>{user}</b></span>
-                            <button className='btn btn-outline-light' onClick={logout}>Log Out</button>
+                            <button className='btn btn-outline-info' onClick={logout}>Log Out</button>
                         </>
                     ):(
                         <>
