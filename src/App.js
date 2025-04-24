@@ -12,6 +12,7 @@ import ShoppingCart from './components/ShoppingCart';
 import Navcomponent from './components/Navcomponent';
 import Context from './Context/Context';
 import React from 'react';
+import Chatbot from './components/Chatbot';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/makepayment' element={<Makepayment/>}/>
         <Route path='/cart' element={<ShoppingCart/>}/>
         <Route path='/nav' element={<Navcomponent/>}/>
+        <Route path='/bot' element={<Chatbot/>}/>
         {/* Default Path to component */}
         <Route path='/' element={<Getproducts/>}/>
         <Route path='*' element={<Pagenotfound/>}/>

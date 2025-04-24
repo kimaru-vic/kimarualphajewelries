@@ -32,6 +32,7 @@ const Navcomponent = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav" style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <Link className="nav-item nav-link" to={'/cart'}><span className='bi bi-cart-fill fs-4 parent-cart'><span className='child-cart'>{cart.length}</span></span></Link>
+                    <Link className="nav-item nav-link" to={'/bot'}>Chatbot</Link>
                     { user?(
                         <>
                             <Link className="nav-item nav-link" to={'/addproduct'}>Add Product</Link>
