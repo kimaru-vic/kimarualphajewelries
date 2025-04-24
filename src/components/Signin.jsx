@@ -58,9 +58,9 @@ const Signin = () => {
           <form onSubmit={submit}>
             <span className='text-info fs-4'>{loading}</span>
             <span className='text-danger fs-4'>{error}</span>
-            <input type="email" className="form-control" id="" placeholder='Enter Email' value={email} 
+            <input type="email" className="form-control" id="email" placeholder='Enter Email' value={email} 
             onChange={(e)=>setEmail(e.target.value)} /> <br />
-            <input type="password" className="form-control" id="" placeholder='Input password' value={password} 
+            <input type="password" className="form-control" id="password" placeholder='Input password' value={password} 
             onChange={(e)=>setPassword(e.target.value)} /> <br />
             <button type="submit" className='btn btn-primary w-100'>Signin</button>
           </form>
