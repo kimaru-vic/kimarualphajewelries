@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 
 
-const Getproducts =async () => {
+const Getproducts =() => {
   // initialize hooks
   const [loading,setLoading]=useState("")
   const [error,setError]=useState("")

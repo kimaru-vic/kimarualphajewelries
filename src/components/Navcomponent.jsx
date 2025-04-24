@@ -8,7 +8,6 @@ import logo from '../../src/images/alphaicon.png'
 const Navcomponent = () => {
     const{state:{cart}}=CartState()
     const user=JSON.parse(localStorage.getItem("user"))
-    console.log(user)
     const navigate=useNavigate()
     
     
