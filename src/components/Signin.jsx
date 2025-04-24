@@ -33,7 +33,7 @@ const Signin = () => {
       if(response.data.user){
         // we store the signed in user to a local storage on the browser
         // SetItem is a storage method
-         localStorage.setItem("user",(response.data.user.username))
+         localStorage.setItem("user",JSON.stringify(response.data.user.username))
 
         // If the login is a success we navigate to getproduct component automatically
         navigation("/")
