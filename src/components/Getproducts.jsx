@@ -24,10 +24,7 @@ const Getproducts =() => {
   
   const getproducts=async (e) => {
     setLoading("Please wait...")
-    
-    
     try {
-      setLoading("")
       setError("")
     } catch (error) {
       setError(error.message)
@@ -50,9 +47,10 @@ const Getproducts =() => {
           <input type="text" placeholder='Search products' className='search-bar text-center' value={search} onChange={(e)=>{setSearch(e.target.value)}}/>
         </div>
         {/* Binding Hooks */}
-        <span className='text-info'>{loading}</span>
         <span className='text-danger'>{error}</span>
-        
+
+        {Array.isArray(product) && product.length>0?(
+          <>
           {filtered.length>0?(
             filtered.map((product)=>(
               <div className="col-md-3 justify-content-center mb-4" key={product.product_id}>
@@ -120,6 +118,11 @@ const Getproducts =() => {
               </div>
             ))
           )}
+          </>
+        ):(
+          <span className='text-info'>{loading}</span>
+        )}
+        
           
           
       </div>
